@@ -34,7 +34,7 @@ const flood = (o, t) => {
       {
         entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
-        playerId: `${o}-${i}`});
+        playerId: `${o}-$`});
         console.log(`${i}/${t} Bots Connected!`)
       }
     }
