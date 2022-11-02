@@ -25,7 +25,7 @@ const flood = (o, t, abc5) => {
     var oldname =  client.localPlayer;
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
-        playerId: client.localPlayer});
+        playerId: client.makeid(10)});
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
         playerId: oldname});
