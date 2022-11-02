@@ -26,7 +26,7 @@ const flood = (o, t, abc5) => {
   var oldid = client.localPlayer
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
-        playerId: oldid + "_" + makeid(2)});
+        playerId: oldid + "ㅤ"});
 }
 
 input()
