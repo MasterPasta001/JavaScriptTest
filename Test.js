@@ -14,9 +14,9 @@ client = {
 }
 
 const flood = (o, t, abc5) => {
-  prompt(client.localPlayer);
-  JSON.parse(localStorage.previousContext).currentPlayer.playerId = "a"
-  prompt(client.localPlayer);
+        entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
+        roomHash: client.roomHash,
+        playerId: client.localPlayer});
 }
 
 input()
