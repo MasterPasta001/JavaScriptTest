@@ -1,4 +1,4 @@
-let a;
+let a; 
 let n;
 let newname;
 const input = () => {
