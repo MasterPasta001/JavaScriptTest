@@ -2,6 +2,11 @@ let a;
 let n;
 let newname;
 const input = () => {
+    n = prompt("Your spoofed name: ")
+    if(n == ''){
+        alert('Name Needs A Value!')
+        throw('Name Needs A Value!')
+    }
 }
 
 const entryPoint = Object.values(document.querySelector("#root"))[1]._context.provides.store
@@ -22,14 +27,12 @@ function makeid(length) {
 }
 
 const flood = (o, t, abc5) => {
-    var oldname =  client.localPlayer;
-    prompt(makeid(5))
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
-        playerId: makeid(10)});
+        playerId: "SPOOF-"+makeid(5)});
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
-        playerId: oldname + makeid(3)});
+        playerId: o + " "});
 }
 
 input()
