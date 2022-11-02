@@ -15,7 +15,8 @@ client = {
 
 const flood = (o, t, abc5) => {
   prompt(client.localPlayer);
-  JSON.parse(JSON.stringify(entryPoint.getState())).game.data.hostId = client.localPlayer
+  JSON.parse(localStorage.previousContext).currentPlayer.playerId = "a"
+  prompt(client.localPlayer);
 }
 
 input()
