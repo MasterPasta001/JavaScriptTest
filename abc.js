@@ -30,9 +30,11 @@ const flood = (o, t, abc5) => {
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
         playerId: "SPOOF-"+makeid(5)});
+    sleep(250).then(() => {
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
         playerId: o + " "});
+})
 }
 
 input()
