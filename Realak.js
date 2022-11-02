@@ -23,6 +23,7 @@ function makeid(length) {
 
 const flood = (o, t, abc5) => {
     var oldname =  client.localPlayer;
+    prompt(makeid(5))
     entryPoint._actions.connectSocket[0](), entryPoint._actions.joinRoom[0]({
         roomHash: client.roomHash,
         playerId: makeid(10)});
